@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hack Hours CSS Variables - Ex 1</title>
-  </head>
-  <body>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Assignment</title>
+    <style>
+        /* กำหนด CSS Variables */
+        :root {
+            --branding-color: #ff7f50;
+            --secondary-color: cornsilk;
+            --highlight-color: #d2691e;
+            --muted-color: #a9a9a9;
+
+            --padding-level-5: 20px;
+            --font-triple-extra-large: 100px;
+        }
+
+        /* นำตัวแปรไปใช้ตาม Requirement */
+        .introduction {
+            background-color: var(--secondary-color);
+            padding: var(--padding-level-5);
+        }
+
+        .introduction h1 {
+            color: var(--branding-color);
+            font-size: var(--font-triple-extra-large);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- โครงสร้าง HTML ตามโจทย์ -->
     <div class="introduction">
-      <h1>CSS Variable</h1>
-      <h2>It's cool 🌟</h2>
+        <h1>Welcome to My Website</h1>
+        <p>นี่คือเนื้อหาตัวอย่างภายใน section introduction ครับ</p>
     </div>
-  </body>
+
+</body>
 </html>
+
